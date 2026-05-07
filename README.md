@@ -6,7 +6,7 @@
 
 ## ✨ Features
 
-### 📋 Student Management
+### 📋Student Management
 - Add, edit, and delete student profiles
 - Search by name or student ID
 - Sort by CGPA, name, or ID
