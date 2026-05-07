@@ -1,80 +1,35 @@
-# Java-Project
-Student Information System
-This is a simple console-based Java application for managing student records, courses, marks, attendance, credits, and calculating CGPA (Cumulative Grade Point Average). It enables users to add students, assign courses with attendance and marks, and view full student details with computed grades and CGPA.
+# Student Information System
 
-**Features:**
+A React frontend for the Student Information System.
 
-Add new student records (ID & Name)
+## Requirements
+- Node.js 18+ (download from https://nodejs.org)
 
-Assign courses with credit value to students
+## Quick Start
 
-Enter attendance and marks for each course
+1. Open a terminal in this folder
+2. Run these commands:
 
-Marks conversion to grades, including special handling:
+```bash
+npm install
+npm run dev
+```
 
-Marks ≥ 90: S (10 points)
+3. Open your browser at: http://localhost:5173
 
-Marks ≥ 80: A (9 points)
+## Other Commands
 
-Marks ≥ 70: B (8 points)
+| Command | Description |
+|---|---|
+| `npm run dev` | Start development server (hot reload) |
+| `npm run build` | Build for production (outputs to /dist) |
+| `npm run preview` | Preview the production build |
 
-Marks ≥ 60: C (7 points)
-
-Marks ≥ 50: D (6 points)
-
-Marks ≥ 40 and < 50: 5 (5 points)
-
-Marks < 40: F (0 points)
-
-Attendance check before marks entry:
-
-If attendance < 75%, student is debarred and marks auto-assigned as 0
-
-
-**Menu options**:
-
-1. Add Student:
-Enter ID and name for a new student.
-(IDs must be digits, names must not contain numbers.)
-
-2. Add Course, Marks & Attendance to Student:
-Enter existing student ID, course name, credit, attendance, and marks.
-(Attendance is checked before marks. Low attendance de-bars.)
-
-3. Display Students:
-Shows detailed information for all students, including CGPA.
-
-4. Exit:
-Ends the application.
-
-**Data Validation**
-
-Student ID: Only digits allowed, must be unique.
-
-Student Name: Cannot contain digits.
-
-Course Name: Only letters and spaces allowed.
-
-Course Credit: Must be positive integer.
-
-CGPA calculation:
-CGPA
-=
-∑
-(
-credits
-×
-grade points
-)
-∑
-(
-credits
-)
-CGPA= 
-∑(credits)
-∑(credits×grade points)
- 
-
-Student details listing with all course info, grades, CGPA, and debar status
-
-
+## Features
+- Add / edit / delete students
+- Add / edit / remove courses per student
+- Attendance & marks tracking with auto-debarring (<75%)
+- CGPA calculation using weighted credits
+- Grade distribution (S/A/B/C/D/E/F scale)
+- Search & sort students
+- Dashboard with rankings and stats
